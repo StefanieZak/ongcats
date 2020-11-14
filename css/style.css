@@ -1,0 +1,71 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+/* Header Redes Sociais*/
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.redes-sociais-header {
+  background: #F5B994;
+  height: 60px;
+}
+
+.redes-sociais-header ul {
+  display: flex;
+}
+
+.redes-sociais-header ul li { 
+  padding: 10px 15px 10px 0px;
+}
+
+.redes-sociais-header img { 
+  max-width: 40px;
+}
+
+/* Header */
+
+.menu { 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  height: 160px;
+}
+
+.menu a {
+  padding: 15px 0;
+}
+
+.menu a img {
+  max-width: 498px;
+  position: absolute;
+  top: 15px;
+}
+
+.menu ul {
+  display: flex;
+  align-items: center;
+}
+
+.menu ul li a{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  color: #EE9C6A;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-left: 40px;
+}
+
+.menu ul li a:hover {
+  color: #BC6E3E;
+}
