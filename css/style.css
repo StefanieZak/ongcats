@@ -8,6 +8,35 @@ p {
   line-height: 2.25rem;
 }
 
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.25rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  color: #80BEAF;
+  text-align: center;
+  margin: 40px auto 60px;
+}
+
+h1:after {
+  content: " ";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #80BEAF;
+  margin: 5px 0;
+  margin-left: calc(50% - 30px);
+}
+
+h3 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 /* Header Redes Sociais*/
 
 .container {
@@ -64,8 +93,12 @@ p {
   color: #EE9C6A;
   text-transform: uppercase;
   font-weight: bold;
-  padding-left: 40px;
+  padding-left: 1.5vw;
   transition: 0.3s;
+}
+
+.menu ul li:last-child {
+  padding-left: 0px;
 }
 
 .menu ul li a:hover {
@@ -91,9 +124,6 @@ blockquote {
 }
 
 .introducao p {
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.5rem;
-  line-height: 2.25rem;
   font-style: italic;
   color: #fff;
   text-shadow: 0px 3px 6px #000000;
@@ -124,3 +154,81 @@ blockquote {
   text-shadow: 0px 3px 6px #4B4B4B;
   max-width: 350px;
 }
+
+/* Home Adoção */
+
+.home-adocao {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.home-img-gato {
+  background: url("../img/home/adocao.jpg");
+  width: 500px;
+  height: 480px;
+  position: relative;
+}
+
+.home-inf-gato {
+  background: rgb(0, 0, 0, 0.4);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 28%;
+  text-align: center;
+}
+
+.home-inf-gato h3 {
+  padding: 30px 5px 15px;
+}
+
+.home-inf-gato p {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.call p {
+  font-style: italic;
+  text-align: center;
+  margin: 60px 0 30px; 
+}
+
+.home-button {
+  background: #EE9C6A;
+  display: flex;
+  align-items: center;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 3px 3px 6px #B8A090;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  transition: 0.2s;
+}
+
+.home-button:hover {
+  background: #F5B994;
+  box-shadow: 5px 5px 6px #B8A090;
+}
+
+.home-button span {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 0px #DA8A58;
+  letter-spacing: 0.1rem;
+  margin-left: 8px;
+}
+
+
+
+
+
+
+
+
+
