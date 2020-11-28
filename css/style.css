@@ -265,7 +265,7 @@ blockquote {
 
 /* Home Apadrinhamento */
 
-.apadrinhamento {
+.home-apadrinhamento {
   background: #FDF1EA;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -346,7 +346,7 @@ blockquote {
   display: grid;
   grid-template-columns: 2fr 2fr;
   gap: 60px;
-  padding-bottom: 80px;
+  margin-bottom: 100px;
 }
 
 .sobre-wrapper-img {
@@ -364,11 +364,11 @@ blockquote {
 
 .objetivo p {
   max-width: 1200px;
-  padding-bottom: 80px;
+  margin-bottom: 100px;
 }
 
 .img-equipe {
-  padding-bottom: 80px;
+  margin-bottom: 80px;
 }
 
 /* Página de Adoção */
@@ -404,4 +404,103 @@ blockquote {
   color: #EE9C6A;
 }
 
+/* Página de Apadrinhamento */
 
+.apadrinhamento-bg {
+  background: url("../img/apadrinhamento-bg.jpg") no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.etapas-apadrinhamento {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.etapas-apadrinhamento h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #80BEAF;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.etapas-apadrinhamento p, .etapas-apadrinhamento li {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.5rem;
+}
+
+.etapas-apadrinhamento li {
+  line-height: 2.375rem;
+}
+
+.formulario-button {
+  background: #B3DDD1;
+  display: flex;
+  align-items: center;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 3px 3px 6px #879186;
+  margin: 60px auto;
+  transition: 0.2s;
+}
+
+.formulario-button:hover {
+  background: #80BEAF;
+  box-shadow: 5px 5px 6px #879186;
+}
+
+.formulario-button span {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 0px #395d2e3b;
+  letter-spacing: 0.1rem;
+  margin-left: 8px;
+}
+
+.etapa {
+  width: 32%;
+  padding: 80px 30px 60px;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  border: solid 4px #80BEAF;
+  position: relative;
+}
+
+.numero-etapa {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.375rem;
+  color: #80BEAF;
+  border: solid 4px #80BEAF;
+  height: 4.25rem;
+  width: 4.25rem;
+  border-radius: 0.625rem;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -2.125rem;
+  left: calc(50% - 2.125rem);
+}
+
+.apadrinhamento {
+  background: #FDF1EA;
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+
+.apadrinhamento h2 {
+  margin-bottom: 0;
+}
