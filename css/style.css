@@ -293,7 +293,6 @@ blockquote {
 }
 
 .footer p {
-  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 1.25rem;
 }
 
@@ -431,7 +430,7 @@ blockquote {
   text-align: center;
 }
 
-.etapas-apadrinhamento p, .etapas-apadrinhamento li {
+.etapas-apadrinhamento li {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 1.5rem;
 }
@@ -573,11 +572,11 @@ blockquote {
   }
 
   .banco:first-child {
-    margin-left: 80px;
+    margin-left: 110px;
   }
 
   .banco:last-child {
-    margin-right: 80px;
+    margin-right: 110px;
   }
 
   .banco h3 {
@@ -641,3 +640,62 @@ blockquote {
     text-transform: uppercase;
     color: #80BEAF
   }
+
+  .outros-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 80px;
+  }
+
+  .outras-ajudas {
+    width: 30%;
+    background: #F5B994;
+    border-radius: 10px;
+  }
+
+  .outras-ajudas h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    line-height: 2.5rem;
+    margin: 30px 20px;
+  }
+
+  .outras-ajudas p {
+    color: #fff;
+    text-align: center;
+    margin: 0 35px;
+  }
+
+  .outras-ajudas a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 20px;
+    padding-top: 10px;
+    margin-top: 60px;
+  }
+
+  .btn-doacoes {
+    border-top: 3px solid #fff;
+  }
+
+  .outras-ajudas ul{
+    display: flex;
+    justify-content: center;
+  }
+
+  .outras-ajudas img {
+    width: 90px;
+    margin-top: -30px;
+  }
+
