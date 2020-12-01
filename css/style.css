@@ -689,6 +689,7 @@ blockquote {
 
   .btn-doacoes {
     border-top: 3px solid #fff;
+    transition: 0.2s;
   }
 
 .btn-doacoes:hover {
@@ -830,4 +831,180 @@ blockquote {
 
 .gato-contato {
   margin: 60px auto;
+}
+
+/* Página Inf-Adoções */
+
+.inf-adocoes-bg {
+  background: url("../img/home/introducao-bg.jpg") no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inf-adocoes-bg blockquote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inf-adocoes-bg p {
+  font-style: italic;
+  color: #fff;
+  text-shadow: 0px 3px 6px #000000;
+  max-width: 350px;
+  text-align: center; 
+}
+
+.inf-adocoes-bg p:before, .inf-adocoes-bg p:after {
+  content: " ";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #fff;
+  box-shadow: 0px 3px 6px #4B4B4B;
+  margin: 20px 0;
+  margin-left: calc(50% - 30px);
+}
+
+.inf-adocoes-bg cite {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.25rem;
+  line-height: 2.25rem;
+  font-style: normal;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem; 
+  color: #fff;
+  text-shadow: 0px 3px 6px #4B4B4B;
+  max-width: 350px;
+}
+
+.inf-gato-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.foto-gato {
+  margin-top: 90px;
+  margin-bottom: 110px;
+}
+
+.info-gato h3 {
+  font-size: 2.25rem;
+  color: #000;
+  font-weight: normal;
+  margin-top: 90px;
+  margin-bottom: 20px;
+}
+
+.info-gato p {
+  max-width: 800px;
+  margin-bottom: 30px;
+}
+
+.tabela-inf {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tabela-inf table {
+  margin-right: 30px;
+  margin-bottom: 60px;
+}
+
+.tabela-inf tr {
+  background: #D1EAE3;
+}
+
+.tabela-inf tr:nth-child(even) {
+  background: #E0EBF1;
+}
+
+.tabela-inf td {
+  width: 135px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.5rem;
+  padding: 16px 20px;
+}
+
+.estilo-tabela1 {
+  border-radius: 10px 0 0 0;
+}
+
+.estilo-tabela2 {
+  border-radius: 0 10px 0 0;
+}
+
+.estilo-tabela3 {
+  border-radius: 0 0 0 10px;
+}
+
+.estilo-tabela4 {
+  border-radius: 0 0 10px 0;
+}
+
+.btn-quero-adotar {
+  background: #EE9C6A;
+  display: flex;
+  align-items: center;
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 3px 3px 6px #B8A090;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  transition: 0.2s;
+}
+
+.btn-quero-adotar:hover {
+  background: #F5B994;
+  box-shadow: 5px 5px 6px #B8A090;
+}
+
+.btn-quero-adotar span {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 0px #DA8A58;
+  letter-spacing: 0.1rem;
+  margin-left: 8px;
+}
+
+.btn-voltar {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 3px 3px 6px #B8A090;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  transition: 0.2s;
+}
+
+.btn-voltar:hover {
+  background: #fae6da;
+  box-shadow: 5px 5px 6px #B8A090;
+}
+
+.btn-voltar span {
+  color: #EE9C6A;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 0px rgba(218, 138, 88, 0.185);
+  letter-spacing: 0.1rem;
+  margin-left: 8px;
 }
