@@ -38,12 +38,14 @@
   </header>
 
   <section>
-    <div><img src="img/contatos-bg.jpg"></div>
+    <div class="contato-bg">
     <h1>contato</h1>
+    </div>
   </section>
 
-  <section>
-    <form>
+  <section class="container">
+    <div class="contato-wrapper">
+    <form class="contato-form">
       <label for="nome">Nome</label>
       <input type="text" id="nome"></input>
       <label for="email">E-mail</label>
@@ -54,24 +56,25 @@
       <input type="text" id="assunto"></input>
       <label for="mensagem">Mensagem</label>
       <textarea type="text" id="mensagem"></textarea>
-      <button><img src="img/home/btn.svg">Enviar</button>
+      <button class="btn-contato">
+        <img src="img/pata.svg" />
+        <span>Enviar</span>
+      </button>
     </form>
-  </section>
 
-  <section>
-    <div>
-      <p>Telefone: (011) 92222-3333
-        Endereço: Rua das Amores, 45 - Vila Pitanga - Santo André - SP </p>
+    <div class="contato-rede-img">
+      <div class="redes-contato">
+      <p>Telefone: (011) 92222-3333</p>
+      <p> Endereço: Rua das Amores, 45 - Vila Pitanga - Santo André - SP </p>
       <ul>
         <li><a href="http://facebook.com" target="_blank"><img src="img/home/facebook.svg" alt="Facebook"></a></li>
         <li><a href="http://instagram.com" target="_blank"><img src="img/home/instagram.svg" alt="Instagram"></a></li>
         <li><a href="http://whatsapp.com" target="_blank"><img src="img/home/whatsapp.svg" alt="Whatsapp"></a></li>
       </ul>
     </div>
-  </section>
-
-  <section>
-    <img src="img/doacoes/gato-doacoes.svg">
+    <img class="gato-contato" src="img/doacoes/gato-doacoes.svg">
+    </div>
+  </div>
   </section>
 
   <footer>
