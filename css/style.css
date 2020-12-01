@@ -753,10 +753,15 @@ blockquote {
    resize: none;
    height: 325px;
    margin-bottom: 60px;
+   padding-top: 20px;
  }
 
- .contato-form input:hover, .contato-form textarea:hover {
-  background: #D2E8E2;
+ .contato-form input:focus, .contato-form textarea:focus {
+  background: #C1DBD4;
+ }
+
+ .contato-form ::placeholder {
+   color: #ACBEB8;
  }
 
  .btn-contato {
