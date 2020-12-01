@@ -689,6 +689,10 @@ blockquote {
     border-top: 3px solid #fff;
   }
 
+.btn-doacoes:hover {
+  color: #BC6E3E;
+}
+
   .outras-ajudas ul{
     display: flex;
     justify-content: center;
