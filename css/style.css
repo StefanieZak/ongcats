@@ -58,6 +58,37 @@ h3 {
   text-transform: uppercase;
 }
 
+.btn {
+  background: #EE9C6A;
+  display: flex;
+  align-items: center;
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 3px 3px 6px #B8A090;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background: #F5B994;
+  box-shadow: 5px 5px 6px #B8A090;
+}
+
+.btn span {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 0px #DA8A58;
+  letter-spacing: 0.1rem;
+  margin-left: 8px;
+}
+
 /* Header Redes Sociais*/
 
 .container {
@@ -233,35 +264,8 @@ blockquote {
   margin: 60px 0 30px; 
 }
 
-.home-button {
-  background: #EE9C6A;
-  display: flex;
-  align-items: center;
-  border: none;
-  outline: none;
-  padding: 10px 15px;
-  border-radius: 10px;
-  cursor: pointer;
-  box-shadow: 3px 3px 6px #B8A090;
-  margin: 0 auto;
-  margin-bottom: 60px;
-  transition: 0.2s;
-}
-
-.home-button:hover {
-  background: #F5B994;
-  box-shadow: 5px 5px 6px #B8A090;
-}
-
-.home-button span {
-  color: #fff;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-shadow: 3px 3px 0px #DA8A58;
-  letter-spacing: 0.1rem;
-  margin-left: 8px;
+.call .btn {
+  width: 210px;
 }
 
 /* Home Apadrinhamento */
@@ -437,36 +441,6 @@ blockquote {
   line-height: 2.375rem;
 }
 
-.formulario-button {
-  background: #B3DDD1;
-  display: flex;
-  align-items: center;
-  border: none;
-  outline: none;
-  padding: 10px 15px;
-  border-radius: 10px;
-  cursor: pointer;
-  box-shadow: 3px 3px 6px #879186;
-  margin: 60px auto;
-  transition: 0.2s;
-}
-
-.formulario-button:hover {
-  background: #80BEAF;
-  box-shadow: 5px 5px 6px #879186;
-}
-
-.formulario-button span {
-  color: #fff;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-shadow: 3px 3px 0px #395d2e3b;
-  letter-spacing: 0.1rem;
-  margin-left: 8px;
-}
-
 .etapa {
   width: 32%;
   padding: 80px 30px 60px;
@@ -474,6 +448,22 @@ blockquote {
   margin-bottom: 60px;
   border: solid 4px #80BEAF;
   position: relative;
+}
+
+.etapa .btn {
+  background: #B3DDD1;
+  width: 260px;
+  box-shadow: 3px 3px 6px #879186;
+  margin: 60px auto;
+}
+
+.etapa .btn:hover {
+  background: #80BEAF;
+  box-shadow: 5px 5px 6px #879186;
+}
+
+.etapa .btn span {
+  text-shadow: 3px 3px 0px #395d2e3b;
 }
 
 .numero-etapa {
@@ -762,37 +752,6 @@ blockquote {
    color: #ACBEB8;
  }
 
- .btn-contato {
-  background: #EE9C6A;
-  display: flex;
-  align-items: center;
-  border: none;
-  outline: none;
-  padding: 10px 15px;
-  border-radius: 10px;
-  cursor: pointer;
-  box-shadow: 3px 3px 6px #B8A090;
-  margin: 0 auto;
-  margin-bottom: 80px;
-  transition: 0.2s;
-}
-
-.btn-contato:hover {
-  background: #F5B994;
-  box-shadow: 5px 5px 6px #B8A090;
-}
-
-.btn-contato span {
-  color: #fff;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-shadow: 3px 3px 0px #DA8A58;
-  letter-spacing: 0.1rem;
-  margin-left: 8px;
-}
-
 .contato-rede-img {
   margin-right: 100px;
 }
@@ -948,6 +907,7 @@ blockquote {
   background: #EE9C6A;
   display: flex;
   align-items: center;
+  width: 310px;
   border: none;
   outline: none;
   padding: 10px 15px;
@@ -979,6 +939,7 @@ blockquote {
   background: #fff;
   display: flex;
   align-items: center;
+  width: 190px;
   border: none;
   outline: none;
   padding: 10px 15px;
@@ -1069,4 +1030,36 @@ blockquote {
 
 .padrinhos p {
   text-align: center;
+}
+
+.btn-quero-apadrinhar {
+  background: #EE9C6A;
+  display: flex;
+  align-items: center;
+  width: 370px;
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 3px 3px 6px #B8A090;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  transition: 0.2s;
+}
+
+.btn-quero-apadrinhar:hover {
+  background: #F5B994;
+  box-shadow: 5px 5px 6px #B8A090;
+}
+
+.btn-quero-apadrinhar span {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 0px #DA8A58;
+  letter-spacing: 0.1rem;
+  margin-left: 8px;
 }
