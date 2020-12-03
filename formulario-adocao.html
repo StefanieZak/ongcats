@@ -37,69 +37,60 @@
   </header>
 
   <section>
-    <div><img src="img/formulario-adocao-bg.jpg"></div>
+    <div class="form-adocao-bg">
     <h1>formulário de adoção</h1>
+    </div>
   </section>
 
-  <section>
-    <div>
+  <section class="container">
+    <div class="form-adocao">
       <form>
-        <label for="nome">Nome</label>
-        <input type="text" id="nome" required></input>
-
-        <label for="email">E-mail</label>
-        <input type="text" id="email" required></input>
-
-        <label for="telefone">Telefone</label>
-        <input type="text" id="telefone" required></input>
-
-        <label for="data-nascimento">Data de Nascimento</label>
-        <input type="text" id="data-nascimento" required></input>
-
-        <label for="rg">RG</label>
-        <input type="text" id="rg" required></input>
-
-        <label for="cpf">CPF</label>
-        <input type="text" id="cpf" required></input>
-
-        <label for="endereco">Endereço</label>
-        <input type="text" id="endereco" required></input>
-
-        <label for="bairro">Bairro</label>
-        <input type="text" id="bairro" required></input>
-
-        <label for="complemento">Complemento</label>
-        <input type="text" id="complemento" required></input>
-
-        <label for="estado">Estado</label>
-        <input type="text" id="estado" required></input>
-
-        <label for="cidade">Cidade</label>
-        <input type="text" id="cidade" required></input>
-
-        <label for="cep">CEP</label>
-        <input type="text" id="cep" required></input>
-
+        <div>
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" required></input>
+          <label for="data-nascimento">Data de Nascimento</label>
+          <input type="text" id="data-nascimento" placeholder="00/00/0000" required></input>
+          <label for="cep">CEP</label>
+          <input type="text" id="cep" placeholder="00000-000" required></input>
+          <label for="complemento">Complemento</label>
+          <input type="text" id="complemento" placeholder="Acesso / Bloco / Apartamento" required></input>
+        </div>
+        <div>
+          <label for="email">E-mail</label>
+          <input type="text" id="email" required></input>
+          <label for="rg">RG</label>
+          <input type="text" id="rg" placeholder="00.000.000-00" required></input>
+          <label for="endereco">Endereço</label>
+          <input type="text" id="endereco" placeholder="Rua / Avenida / Travessa" required></input>
+          <label for="cidade">Cidade</label>
+          <input type="text" id="cidade" required></input>
+        </div>
+        <div>
+          <label for="telefone">Telefone</label>
+          <input type="text" id="telefone" placeholder="(DDD) 90000-0000" required></input>
+          <label for="cpf">CPF</label>
+          <input type="text" id="cpf" placeholder="000.000.000-00" required></input>
+          <label for="bairro">Bairro</label>
+          <input type="text" id="bairro" required></input>
+          <label for="estado">Estado</label>
+          <input type="text" id="estado" required></input>
+        </div>
       </form>
     </div>
 
-    <div>
-      <label>Assinale</label>
 
-      <input type="checkbox" id="idade-gato" name="idade-gato" value="idade-gato"></input>
-      <label>Gatos podem viver até 15 anos, você está preparado para esse compromisso?</label>
-
-      <input type="checkbox" id="residencia-telada" name="residencia-telada" value="residencia-telada"></input>
-      <label>Possuo residência telada.</label>
-
-      <input type="checkbox" id="alergia" name="alergia" value="alergia"></input>
-      <label>Algum dos moradores tem alergia a gatos?</label>
-
-      <input type="checkbox" id="outros-animais" name="outros-animais" value="outros-animais"></input>
-      <label>Possuo outros animais de estimação.</label>
-
-      <input type="checkbox" id="outros-gatos" name="outros-gatos" value="outros-gatos"></input>
-      <label>Já tive outros gatos.</label>
+      <h4>Assinale</h4>
+      <div class="assinale">
+      <div><input type="checkbox" id="idade-gato" name="idade-gato" value="idade-gato"></input>
+        <label>Gatos podem viver até 15 anos, você está preparado para esse compromisso?</label></div>
+      <div><input type="checkbox" id="residencia-telada" name="residencia-telada" value="residencia-telada"></input>
+        <label>Possuo residência telada.</label></div>
+      <div><input type="checkbox" id="alergia" name="alergia" value="alergia"></input>
+        <label>Algum dos moradores tem alergia a gatos?</label></div>
+      <div>      <input type="checkbox" id="outros-animais" name="outros-animais" value="outros-animais"></input>
+        <label>Possuo outros animais de estimação.</label></div>
+      <div><input type="checkbox" id="outros-gatos" name="outros-gatos" value="outros-gatos"></input>
+        <label>Já tive outros gatos.</label></div>
     </div>
 
     <div>
