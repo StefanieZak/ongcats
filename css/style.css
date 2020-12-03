@@ -1121,7 +1121,7 @@ blockquote {
   color: #ACBEB8;
 }
 
-.container h4 {
+.titulo-checkbox {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 1.5rem;
   text-transform: uppercase;
@@ -1141,6 +1141,7 @@ blockquote {
   margin-right: 10px;
   margin-bottom: 20px;
   cursor: pointer;
+  border-radius: 10px;
 }
 
 .assinale label {
