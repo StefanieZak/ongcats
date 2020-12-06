@@ -1135,16 +1135,41 @@ blockquote {
   flex-direction: column;
 }
 
-.assinale input {
-  width: 20px;
-  height: 20px;
-  margin-right: 10px;
-  margin-bottom: 20px;
-  cursor: pointer;
-  border-radius: 10px;
-}
-
 .assinale label {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 1.5rem;
 }
+
+input[type=checkbox] + label {
+  display: block;
+  cursor: pointer;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox] + label:before {
+  content: "\2714";
+  font-size: 1.25rem;
+  border: 3px solid #B3DDD1;
+  border-radius: 5px;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  padding: 0 5px 10px 3px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  color: transparent;
+  transition: .2s;
+} 
+
+input[type=checkbox] + label:active:before {
+  transform: scale(0);
+}
+
+input[type=checkbox]:checked + label:before {
+  background-color: #B3DDD1;
+  color: #fff;
+}
+
