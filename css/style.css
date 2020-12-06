@@ -1106,14 +1106,7 @@ blockquote {
   font-size: 1.5rem;
 }
 
-/* .form-adocao textarea {
-  resize: none;
-  height: 325px;
-  margin-bottom: 60px;
-  padding-top: 20px;
-} */
-
-.form-adocao input:focus, .form-adocao textarea:focus {
+.form-adocao input:focus {
  background: #C1DBD4;
 }
 
@@ -1140,11 +1133,6 @@ blockquote {
   font-size: 1.5rem;
 }
 
-input[type=checkbox] + label {
-  display: block;
-  cursor: pointer;
-}
-
 input[type=checkbox] {
   display: none;
 }
@@ -1162,6 +1150,7 @@ input[type=checkbox] + label:before {
   margin-bottom: 20px;
   color: transparent;
   transition: .2s;
+  cursor: pointer;
 } 
 
 input[type=checkbox] + label:active:before {
@@ -1173,3 +1162,32 @@ input[type=checkbox]:checked + label:before {
   color: #fff;
 }
 
+.textarea-questao {
+  display: flex;
+  flex-direction: column;
+}
+
+.textarea-questao label {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.5rem;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.textarea-questao textarea {
+  resize: none;
+  border: none;
+  outline: none;
+  background: #E7F4F0;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.200);
+  border-radius: 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.5rem;
+  padding: 20px;
+
+}
+
+.textarea-questao textarea:focus{
+  background: #C1DBD4;
+
+ }
