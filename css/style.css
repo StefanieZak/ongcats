@@ -58,6 +58,11 @@ h3 {
   text-transform: uppercase;
 }
 
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
 .btn {
   background: #EE9C6A;
   display: flex;
@@ -68,8 +73,6 @@ h3 {
   border-radius: 10px;
   cursor: pointer;
   box-shadow: 3px 3px 6px #B8A090;
-  margin: 0 auto;
-  margin-bottom: 60px;
   transition: 0.2s;
 }
 
@@ -89,12 +92,37 @@ h3 {
   margin-left: 8px;
 }
 
-/* Header Redes Sociais*/
-
-.container {
-  width: 85%;
-  margin: 0 auto;
+.btn-voltar {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  width: 190px;
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 3px 3px 6px #B8A090;
+  transition: 0.2s;
 }
+
+.btn-voltar:hover {
+  background: #fae6da;
+  box-shadow: 5px 5px 6px #B8A090;
+}
+
+.btn-voltar span {
+  color: #EE9C6A;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 0px rgba(218, 138, 88, 0.185);
+  letter-spacing: 0.1rem;
+  margin-left: 8px;
+}
+
+/* Header Redes Sociais*/
 
 .redes-sociais-header {
   background: #F5B994;
@@ -266,6 +294,7 @@ blockquote {
 
 .call .btn {
   width: 210px;
+  margin: 30px auto 60px;
 }
 
 /* Home Apadrinhamento */
@@ -752,6 +781,11 @@ blockquote {
    color: #ACBEB8;
  }
 
+ .contato-form .btn {
+   width: 180px;
+   margin: 0 auto 80px;
+ }
+
 .contato-rede-img {
   margin-right: 100px;
 }
@@ -859,7 +893,7 @@ blockquote {
 
 .info-gato p {
   max-width: 800px;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 }
 
 .tabela-inf {
@@ -869,7 +903,7 @@ blockquote {
 
 .tabela-inf table {
   margin-right: 30px;
-  margin-bottom: 60px;
+  margin-bottom: 80px;
 }
 
 .tabela-inf tr {
@@ -903,68 +937,14 @@ blockquote {
   border-radius: 0 0 10px 0;
 }
 
-.btn-quero-adotar {
-  background: #EE9C6A;
+.btn-inf-adocao {
   display: flex;
-  align-items: center;
-  width: 310px;
-  border: none;
-  outline: none;
-  padding: 10px 15px;
-  border-radius: 10px;
-  cursor: pointer;
-  box-shadow: 3px 3px 6px #B8A090;
-  margin: 0 auto;
-  margin-bottom: 30px;
-  transition: 0.2s;
+  justify-content: center;
 }
 
-.btn-quero-adotar:hover {
-  background: #F5B994;
-  box-shadow: 5px 5px 6px #B8A090;
-}
-
-.btn-quero-adotar span {
-  color: #fff;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-shadow: 3px 3px 0px #DA8A58;
-  letter-spacing: 0.1rem;
-  margin-left: 8px;
-}
-
-.btn-voltar {
-  background: #fff;
-  display: flex;
-  align-items: center;
-  width: 190px;
-  border: none;
-  outline: none;
-  padding: 10px 15px;
-  border-radius: 10px;
-  cursor: pointer;
-  box-shadow: 3px 3px 6px #B8A090;
-  margin: 0 auto;
-  margin-bottom: 80px;
-  transition: 0.2s;
-}
-
-.btn-voltar:hover {
-  background: #fae6da;
-  box-shadow: 5px 5px 6px #B8A090;
-}
-
-.btn-voltar span {
-  color: #EE9C6A;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-shadow: 3px 3px 0px rgba(218, 138, 88, 0.185);
-  letter-spacing: 0.1rem;
-  margin-left: 8px;
+.btn-inf-adocao .btn {
+  width: 205px;
+  margin-left: 90px;
 }
 
 /* Inf-Apadrinhamento */
@@ -1032,37 +1012,15 @@ blockquote {
   text-align: center;
 }
 
-.btn-quero-apadrinhar {
-  background: #EE9C6A;
+.btns-inf-apadrinhamento {
   display: flex;
-  align-items: center;
-  width: 370px;
-  border: none;
-  outline: none;
-  padding: 10px 15px;
-  border-radius: 10px;
-  cursor: pointer;
-  box-shadow: 3px 3px 6px #B8A090;
-  margin: 0 auto;
-  margin-bottom: 30px;
-  transition: 0.2s;
+  justify-content: center;
 }
 
-.btn-quero-apadrinhar:hover {
-  background: #F5B994;
-  box-shadow: 5px 5px 6px #B8A090;
-}
-
-.btn-quero-apadrinhar span {
-  color: #fff;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-shadow: 3px 3px 0px #DA8A58;
-  letter-spacing: 0.1rem;
-  margin-left: 8px;
-}
+.btns-inf-apadrinhamento .btn {
+  width: 265px;
+  margin-left: 90px;
+} 
 
 /* Formulário Adoção */
 
@@ -1079,27 +1037,29 @@ blockquote {
 
 .form-adocao form {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
+.form-item {
+  width: 499px;
+  margin: 20px auto;
+}
+
 .form-adocao label {
-  display: flex;
-  flex-direction: column;
+  display: block;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 1.5rem;
   margin-bottom: 20px;
 }
 
 .form-adocao input {
-  display: flex;
-  flex-direction: column;
-  width: 500px;
+  width: 100%;
   height: 60px;
   border: none;
   border-radius: 10px;
   background: #E7F4F0;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.200);
-  margin-bottom: 40px;
   padding-left: 20px;
   outline: none;
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -1119,7 +1079,7 @@ blockquote {
   font-size: 1.5rem;
   text-transform: uppercase;
   color: #80BEAF;
-  margin-top: 10px;
+  margin-top: 40px;
   margin-bottom: 30px;
 }
 
@@ -1184,10 +1144,23 @@ input[type=checkbox]:checked + label:before {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 1.5rem;
   padding: 20px;
-
 }
 
 .textarea-questao textarea:focus{
   background: #C1DBD4;
-
  }
+
+ .btns-formulario {
+   display: flex;
+   margin: 60px 0 80px;
+   justify-content: center; 
+ }
+
+ .btns-formulario .btn {
+   margin: 0;
+}
+
+.btns-formulario .btn-voltar {
+  margin: 0;
+  margin-right: 90px;
+}
