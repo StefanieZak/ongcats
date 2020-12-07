@@ -37,73 +37,114 @@
   </header>
 
   <section>
-    <div><img src="img/formulario-apadrinhamento-bg.jpg"></div>
-    <h1>formulário de apadrinhamento</h1>
+    <div class="form-apadrinhamento-bg">
+      <h1>formulário de apadrinhamento</h1>
+    </div>
   </section>
 
-  <section>
-    <div>
+  <section class="container">
+    <div class="form-apadrinhamento">
       <form>
-        <label for="nome">Nome</label>
-        <input type="text" id="nome" required></input>
+        <div class="item-apadrinhamento">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" required></input>
+        </div>
 
-        <label for="email">E-mail</label>
-        <input type="text" id="email" required></input>
+        <div class="item-apadrinhamento">
+          <label for="email">E-mail</label>
+          <input type="text" id="email" required></input>
+        </div>
 
-        <label for="telefone">Telefone</label>
-        <input type="text" id="telefone" required></input>
+        <div class="item-apadrinhamento">
+          <label for="telefone">Telefone</label>
+          <input type="text" id="telefone" placeholder="(DDD) 90000-0000" required></input>
+        </div>
 
-        <label for="endereco">Endereço</label>
-        <input type="text" id="endereco" required></input>
+        <div class="item-apadrinhamento">
+          <label for="endereco">Endereço</label>
+          <input type="text" id="endereco" placeholder="Rua / Avenida / Travessa" required></input>
+        </div>
 
-        <label for="bairro">Bairro</label>
-        <input type="text" id="bairro" required></input>
+        <div class="item-apadrinhamento">
+          <label for="bairro">Bairro</label>
+          <input type="text" id="bairro" required></input>
+        </div>
 
-        <label for="complemento">Complemento</label>
-        <input type="text" id="complemento" required></input>
+        <div class="item-apadrinhamento">
+          <label for="complemento">Complemento</label>
+          <input type="text" id="complemento" placeholder="Acesso / Bloco / Apartamento" required></input>
+        </div>
 
-        <label for="estado">Estado</label>
-        <input type="text" id="estado" required></input>
+        <div class="item-apadrinhamento">
+          <label for="estado">Estado</label>
+          <input type="text" id="estado" required></input>
+        </div>
 
-        <label for="cidade">Cidade</label>
-        <input type="text" id="cidade" required></input>
+        <div class="item-apadrinhamento">
+          <label for="cidade">Cidade</label>
+          <input type="text" id="cidade" required></input>
+        </div>
 
-        <label for="cep">CEP</label>
-        <input type="text" id="cep" required></input>
+        <div class="item-apadrinhamento">
+          <label for="cep">CEP</label>
+          <input type="text" id="cep" placeholder="00000-000" required></input>
+        </div>
 
-        <label for="gato-escolhido">Gato(s) Escolhido(s)</label>
-        <input type="text" id="gato-escolhido" required></input>
+        <div class="item-apadrinhamento">
+          <label for="gato-escolhido">Gato(s) Escolhido(s)</label>
+          <input type="text" id="gato-escolhido" placeholder="Nome(s) do(s) Gato(s)" required></input>
+        </div>
 
-        <label for="valor-mensal">Valor da doação mensal</label>
-        <input type="text" id="valor-mensal" required></input>
+        <div class="item-apadrinhamento">
+          <label for="valor-mensal">Valor da doação mensal</label>
+          <input type="text" id="valor-mensal" placeholder="R$" required></input>
+        </div>
 
-        <label for="dia-doacao">Dia da doação</label>
-        <input type="text" id="dia-doacao" required></input>
+        <div class="item-apadrinhamento">
+          <label for="dia-doacao">Dia da doação</label>
+          <input type="text" id="dia-doacao" placeholder="00/00/0000" required></input>
+        </div>
 
-        <label for="forma-pagamento">Forma de pagamento</label>
-        <input type="text" id="forma-pagamento" required></input>
+        <div class="item-apadrinhamento">
+          <label for="forma-pagamento">Forma de pagamento</label>
+          <input type="text" id="forma-pagamento" required></input>
+        </div>
 
-        <label for="deposito-programado">No caso de depósito programado, informe o período</label>
-        <input type="text" id="deposito-programado" required></input>
+        <div class="item-apadrinhamento">
+          <label for="deposito-programado">No caso de depósito programado, informe o período</label>
+          <input type="text" id="deposito-programado" placeholder="00/00/0000" required></input>
+        </div>
+
+        <div class="item-apadrinhamento"></div>
       </form>
     </div>
 
-    <div>
-      <label>Podemos colocar seu nome como Padrinho/ Madrinha no Site?</label>
-      <select required>
-        <option value="sim">Sim</option>
-        <option value="nao">Não</option>
-      </select>
+    <div class="questao-apadrinhamento">
+      <p>Podemos colocar seu nome como Padrinho/ Madrinha no Site?</p>
+
+      <div class="radio-wrapper">
+        <input type="radio" id="sim" name="nome-padrinho" value="sim">
+        <label for="sim">Sim</label><br>
+
+        <input type="radio" id="nao" name="nome-padrinho" value="nao">
+        <label for="nao">Não</label><br>
+      </div>
     </div>
 
-    <div>
-      <form>
-        <label for="comentarios">Comentários</label>
-        <textarea type="text" id="comentarios"></textarea>
+    <form class="comentarios">
+      <label for="comentarios">Comentários</label>
+      <textarea type="text" id="comentarios" rows="4" maxlength="500"></textarea>
+    </form>
 
-        <a href="inf-apadrinhamento.html"><img src="img/home/btn.svg">Voltar</a>
-        <button><img src="img/home/btn.svg">Enviar</button>
-      </form>
+    <div class="btns-formulario">
+      <a href="inf-adocoes.html" class="btn-voltar">
+        <img src="img/btn-voltar.svg" />
+        <span>Voltar</span>
+      </a>
+      <a href="" class="btn">
+        <img src="img/pata.svg" />
+        <span>Enviar</span>
+      </a>
     </div>
   </section>
 

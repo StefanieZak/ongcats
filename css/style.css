@@ -1164,3 +1164,137 @@ input[type=checkbox]:checked + label:before {
   margin: 0;
   margin-right: 90px;
 }
+
+/* Formulário Apadrinhamento */
+
+.form-apadrinhamento-bg {
+  background: url("../img/formulario-apadrinhamento-bg.jpg") no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.form-apadrinhamento form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item-apadrinhamento {
+  width: 499px;
+  margin: 20px auto;
+}
+
+.item-apadrinhamento:nth-last-child(3) label {
+  margin-bottom: 3rem;
+}
+
+.form-apadrinhamento label {
+  display: block;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.form-apadrinhamento input {
+  width: 100%;
+  height: 60px;
+  border: none;
+  border-radius: 10px;
+  background: #E7F4F0;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.200);
+  padding-left: 20px;
+  outline: none;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.5rem;
+}
+
+.form-apadrinhamento input:focus {
+ background: #C1DBD4;
+}
+
+.form-apadrinhamento ::placeholder {
+  color: #ACBEB8;
+}
+
+.questao-apadrinhamento p {
+  display: flex;
+  flex-direction: column;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.5rem;
+  padding-top: 40px;
+  margin-bottom: 20px;
+}
+
+.radio-wrapper {
+  display: flex;
+}
+
+.radio-wrapper label {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.5rem;
+  margin-right: 30px;
+}
+
+.radio-wrapper input {
+  display: none;
+}
+
+input[type=radio] + label::before{
+  content: "x";
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: transparent;
+  padding: 0 6px 12px 5px;
+  border: 3px solid #B3DDD1;
+  border-radius: 5px;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  transition: .2s;
+  cursor: pointer;
+}
+
+input[type=radio] + label:active:before {
+  transform: scale(0);
+}
+
+input[type=radio]:checked + label:before {
+  background-color: #B3DDD1;
+  color: #fff;
+}
+
+.comentarios {
+  display: flex;
+  flex-direction: column;
+}
+
+.comentarios label {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: #80BEAF;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.comentarios textarea {
+  resize: none;
+  border: none;
+  outline: none;
+  background: #E7F4F0;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.200);
+  border-radius: 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.5rem;
+  padding: 20px;
+}
+
+.comentarios textarea:focus{
+  background: #C1DBD4;
+ }
