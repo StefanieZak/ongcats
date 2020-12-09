@@ -4,13 +4,13 @@ body {
 
 p {
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 1.5rem, 1.6rem);
   line-height: 2.25rem;
 }
 
 h1 {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 2.625rem;
+  font-size: clamp (2.25rem, 2.625rem, 2.75rem);
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
@@ -31,7 +31,7 @@ h1:after {
 
 h2 {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 2.25rem;
+  font-size: clamp(1.5rem, 2rem, 2.125rem);
   font-weight: bold;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
@@ -61,6 +61,13 @@ h3 {
 .container {
   width: 85%;
   margin: 0 auto;
+}
+
+@media only screen and (min-width: 2560px) {
+  .container {
+    width: 75%;
+    margin: 0 auto;
+  }
 }
 
 .btn {
@@ -141,6 +148,12 @@ h3 {
   max-width: 40px;
 }
 
+@media only screen and (max-width: 500px) {
+  .redes-sociais-header ul li { 
+    padding-right: 30px;
+  }
+}
+
 /* Header */
 
 .menu { 
@@ -156,7 +169,7 @@ h3 {
 }
 
 .menu a img {
-  max-width: 498px;
+  max-width: 498vw;
   position: absolute;
   top: 15px;
 }
@@ -168,7 +181,7 @@ h3 {
 
 .menu ul li a{
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 1.125rem, 3rem);
   letter-spacing: 0.1rem;
   color: #EE9C6A;
   text-transform: uppercase;
@@ -257,7 +270,8 @@ blockquote {
 }
 
 .home-img-gato {
-  background: url("../img/home/adocao.jpg");
+  background: url("../img/home/adocao.jpg") no-repeat  center;
+  background-size: cover;
   width: 500px;
   height: 480px;
   position: relative;
@@ -273,13 +287,13 @@ blockquote {
 }
 
 .home-inf-gato h3 {
-  padding: 20px 5px 10px;
+  margin: 20px 5px 10px;
 }
 
 .home-inf-gato p {
   font-size: 1.5rem;
   color: #fff;
-  padding: 0 5px;
+  margin: 0 5px;
 }
 
 .btn-mais-inf {
@@ -297,6 +311,41 @@ blockquote {
 .btn-mais-inf:hover {
   color: #F5B994;
   border: solid #F5B994 4px;
+}
+
+@media (max-width: 1600px) {
+  .home-img-gato {
+    width: 360px;
+    height: 340px;
+  }
+
+  .home-inf-gato h3 {
+    font-size: 1rem;
+    margin: 10px 5px 0px;
+  }
+  
+  .home-inf-gato p {
+    font-size: 1rem;
+  }
+  
+  .btn-mais-inf {
+    margin: 0;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    z-index: 1;
+  }
+}
+
+@media (max-width: 1024px) {
+  .home-adocao {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home-img-gato {
+    margin-bottom: 30px;
+  }
 }
 
 .call p {
@@ -1056,7 +1105,8 @@ blockquote {
 
 .form-item {
   width: 499px;
-  margin: 20px auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .form-adocao label {
@@ -1194,11 +1244,13 @@ input[type=checkbox]:checked + label:before {
 .form-apadrinhamento form {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .item-apadrinhamento {
   width: 499px;
-  margin: 20px auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .item-apadrinhamento:nth-last-child(3) label {
