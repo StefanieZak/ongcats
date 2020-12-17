@@ -1,10 +1,16 @@
+@media only screen and (max-width: 500px) {
+  html {
+    font-size: 12px;
+  }
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
 p {
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(0.75rem, 1.5rem, 1.6rem);
+  font-size: 1.5rem;
   line-height: 2.25rem;
 }
 
@@ -136,6 +142,13 @@ h3 {
   margin-left: 8px;
 }
 
+@media only screen and (max-width: 500px) {
+  .btn {
+    padding: 5px 5px;
+    justify-content: center;
+  }
+}
+
 /* Header Redes Sociais*/
 
 .redes-sociais-header {
@@ -170,8 +183,6 @@ h3 {
   position: relative;
   height: 160px;
 }
-
-
 
 .menu a {
   padding: 15px 0;
@@ -222,7 +233,7 @@ h3 {
 
 /* Menu responsivo  */
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 1000px){
   .menu {
     display: none
   }
@@ -238,13 +249,12 @@ h3 {
 }
 
 .menu-mobile{
-  width: 80px;
+  width: 60px;
 }
 
 .menu-mobile-items {
   display: none;
 }
-
 
 .menu-mobile-items li {
   display: block;
@@ -259,11 +269,9 @@ h3 {
   border-top: 1px solid #dbd5d5;
 }
 
-
 .menu-mobile-items.active{
   display: block;
 }
-
 
 .active {
   opacity: 0;
@@ -278,7 +286,7 @@ h3 {
   }
 }
 
-@media only screen and (min-width: 769px){
+@media only screen and (min-width: 1000px){
   .header-mobile {
     display: none
   }
@@ -386,29 +394,6 @@ blockquote {
   border: solid #F5B994 4px;
 }
 
-@media (max-width: 1800px) {
-  .home-img-gato {
-    width: 360px;
-    height: 340px;
-  }
-
-  @media (max-width: 425px) {
-    .home-img-gato {
-      width: 280px;
-      height: 260px;
-    }
-
-    .btn-mais-inf {
-      display: none;
-    }
-
-    .home-inf-gato p {
-      line-height: initial;
-      margin-top: 6px;
-    }
-     
-  }
-
   .home-inf-gato h3 {
     font-size: 1rem;
     margin: 10px 5px 0px;
@@ -425,6 +410,33 @@ blockquote {
     right: 5px;
     z-index: 1;
   }
+
+.call p {
+  font-style: italic;
+  text-align: center;
+  margin: 60px 0 30px; 
+}
+
+.call .btn {
+  width: 210px;
+  margin: 30px auto 60px;
+}
+
+@media (min-width: 1800px) {
+  .home-inf-gato h3, .home-inf-gato p {
+    font-size: 1.5rem;
+  }
+  
+  .home-inf-gato h3 {
+    margin: 20px 5px 10px;
+  }  
+}
+
+@media (max-width: 1800px) {
+  .home-img-gato {
+    width: 360px;
+    height: 340px;
+  }
 }
 
 @media (max-width: 1300px) {
@@ -438,16 +450,26 @@ blockquote {
   }
 }
 
-.call p {
-  font-style: italic;
-  text-align: center;
-  margin: 60px 0 30px; 
-}
+  @media (max-width: 500px) {
+    .home-img-gato {
+      width: 280px;
+      height: 260px;
+    }
 
-.call .btn {
-  width: 210px;
-  margin: 30px auto 60px;
-}
+    .btn-mais-inf {
+      display: none;
+    }
+
+    .home-inf-gato p {
+      line-height: initial;
+      margin-top: 6px;
+      font-size: 1.25rem;
+    }
+
+    .home-inf-gato h3 {
+      font-size: 1.25rem;
+    }
+  }
 
 /* Home Apadrinhamento */
 
