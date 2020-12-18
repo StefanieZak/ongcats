@@ -1,0 +1,150 @@
+@media only screen and (max-width: 500px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(2.25rem, 2.625rem, 2.75rem);
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+  text-shadow: 0px 3px 6px #222;
+}
+
+h1:after {
+  content: " ";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #fff;
+  box-shadow: 0px 3px 6px rgb(61, 61, 61);
+  margin: 5px 0;
+  margin-left: calc(50% - 30px);
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(1.125rem, 2rem, 2.125rem);
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  color: #80BEAF;
+  text-align: center;
+  margin: 40px auto 60px;
+}
+
+h2:after {
+  content: " ";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #80BEAF;
+  margin: 5px 0;
+  margin-left: calc(50% - 30px);
+}
+
+h3 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 2560px) {
+  .container {
+    width: 75%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+.btn {
+  background: #EE9C6A;
+  display: flex;
+  align-items: center;
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 3px 3px 6px #B8A090;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background: #F5B994;
+  box-shadow: 5px 5px 6px #B8A090;
+}
+
+.btn span {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 0px #DA8A58;
+  letter-spacing: 0.1rem;
+  margin-left: 8px;
+}
+
+.btn-voltar {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  width: 190px;
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 3px 3px 6px #B8A090;
+  transition: 0.2s;
+}
+
+.btn-voltar:hover {
+  background: #fae6da;
+  box-shadow: 5px 5px 6px #B8A090;
+}
+
+.btn-voltar span {
+  color: #EE9C6A;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 0px rgba(218, 138, 88, 0.185);
+  letter-spacing: 0.1rem;
+  margin-left: 8px;
+}
+
+@media only screen and (max-width: 500px) {
+  .btn {
+    padding: 5px 5px;
+    justify-content: center;
+  }
+}

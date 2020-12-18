@@ -1,0 +1,142 @@
+/* Header Redes Sociais*/
+
+.redes-sociais-header {
+  background: #F5B994;
+  height: 60px;
+}
+
+.redes-sociais-header ul {
+  display: flex;
+}
+
+.redes-sociais-header ul li { 
+  padding: 10px 15px 10px 0px;
+}
+
+.redes-sociais-header img { 
+  max-width: 40px;
+}
+
+@media only screen and (max-width: 500px) {
+  .redes-sociais-header ul li { 
+    padding-right: 30px;
+  }
+}
+
+/* Header */
+
+.menu { 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  height: 160px;
+}
+
+.menu a {
+  padding: 15px 0;
+}
+
+.menu a img {
+  max-width: 498vw;
+  position: absolute;
+  top: 15px;
+}
+
+.menu ul {
+  display: flex;
+  align-items: center;
+}
+
+.menu ul li a{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(1rem, 1.125rem, 3rem);
+  letter-spacing: 0.1rem;
+  color: #EE9C6A;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-left: 1.5vw;
+  transition: 0.3s;
+}
+
+.menu ul li:last-child {
+  padding-left: 0px;
+}
+
+.menu ul li a:hover {
+  color: #BC6E3E;
+}
+
+.menu ul li a.menu_ativo {
+  color: #BC6E3E;
+}
+
+.menu ul li a.menu_ativo:after {
+  display: block;
+  content: "";
+  background: #BC6E3E;
+  width: 60px;
+  height: 3px;
+  margin-left: calc(50% - 15px);
+}
+
+/* Menu responsivo  */
+
+@media only screen and (max-width: 1000px){
+  .menu {
+    display: none
+  }
+}
+
+.header-mobile-menu {
+  display: flex;
+  justify-content:space-between;
+  margin: 20px;
+}
+.logo-mobile{
+  width: 120px;
+}
+
+.menu-mobile{
+  width: 60px;
+}
+
+.menu-mobile-items {
+  display: none;
+}
+
+.menu-mobile-items li {
+  display: block;
+  padding-left: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.1rem;
+  color: #EE9C6A;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-top: 1px solid #dbd5d5;
+}
+
+.menu-mobile-items.active{
+  display: block;
+}
+
+.active {
+  opacity: 0;
+  transform: translatY(-50px);
+  animation: animeDown 0.5s forwards;
+}
+
+@keyframes animeDown {
+  to {
+    opacity: initial;
+    transform: initial;
+  }
+}
+
+@media only screen and (min-width: 1000px){
+  .header-mobile {
+    display: none
+  }
+}

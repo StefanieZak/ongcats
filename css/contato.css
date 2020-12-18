@@ -1,0 +1,98 @@
+.contato-bg {
+    background: url("../img/contatos-bg.jpg") no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+  }
+
+  .contato-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contato-form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+  }
+
+ .contato-form label {
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-size: 1.5rem;
+   margin-bottom: 20px;
+ }
+
+ .contato-form input, .contato-form textarea {
+   width: 700px;
+   height: 60px;
+   border: none;
+   border-radius: 10px;
+   background: #E7F4F0;
+   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.200);
+   margin-bottom: 20px;
+   padding-left: 20px;
+   outline: none;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-size: 1.5rem;
+ }
+
+ .contato-form textarea {
+   resize: none;
+   height: 325px;
+   margin-bottom: 60px;
+   padding-top: 20px;
+ }
+
+ .contato-form input:focus, .contato-form textarea:focus {
+  background: #C1DBD4;
+ }
+
+ .contato-form ::placeholder {
+   color: #ACBEB8;
+ }
+
+ .contato-form .btn {
+   width: 180px;
+   margin: 0 auto 80px;
+ }
+
+.contato-rede-img {
+  margin-right: 100px;
+}
+
+.redes-contato {
+  width: 515px;
+  height: 410px;
+  background: #F5B994;
+  border-radius: 10px;
+}
+
+.redes-contato p {
+  color: #fff;
+  text-align: center;
+  padding: 0 40px;
+  line-height: 2.5rem;
+}
+
+.redes-contato p:first-child {
+  padding-top: 40px;
+}
+
+.redes-contato ul {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.redes-contato img {
+  width: 100px;
+  margin: 30px 15px 0;
+}
+
+.gato-contato {
+  margin: 60px auto;
+}

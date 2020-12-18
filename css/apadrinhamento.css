@@ -1,0 +1,82 @@
+.apadrinhamento-bg {
+  background: url("../img/apadrinhamento-bg.jpg") no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.etapas-apadrinhamento {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.etapas-apadrinhamento h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #80BEAF;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.etapas-apadrinhamento li {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.5rem;
+  line-height: 2.375rem;
+}
+
+.etapa {
+  width: 32%;
+  padding: 80px 30px 60px;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  border: solid 4px #80BEAF;
+  position: relative;
+}
+
+.etapa .btn {
+  background: #B3DDD1;
+  width: 260px;
+  box-shadow: 3px 3px 6px #879186;
+  margin: 60px auto;
+}
+
+.etapa .btn:hover {
+  background: #80BEAF;
+  box-shadow: 5px 5px 6px #879186;
+}
+
+.etapa .btn span {
+  text-shadow: 3px 3px 0px #395d2e3b;
+}
+
+.numero-etapa {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.375rem;
+  color: #80BEAF;
+  border: solid 4px #80BEAF;
+  height: 4.25rem;
+  width: 4.25rem;
+  border-radius: 0.625rem;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -2.125rem;
+  left: calc(50% - 2.125rem);
+}
+
+.apadrinhamento {
+  background: #FDF1EA;
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+
+.apadrinhamento h2 {
+  margin-bottom: 0;
+}

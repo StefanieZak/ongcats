@@ -1,0 +1,186 @@
+/* Introdução */
+
+.introducao-bg {
+  background: url("../img/home/introducao-bg.jpg") no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+blockquote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.introducao p {
+  font-style: italic;
+  color: #fff;
+  text-shadow: 0px 3px 6px #000000;
+  max-width: 350px;
+  text-align: center; 
+}
+
+.introducao p:before, .introducao p:after {
+  content: " ";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #fff;
+  box-shadow: 0px 3px 6px #4B4B4B;
+  margin: 20px 0;
+  margin-left: calc(50% - 30px);
+}
+
+.introducao cite {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.25rem;
+  line-height: 2.25rem;
+  font-style: normal;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem; 
+  color: #fff;
+  text-shadow: 0px 3px 6px #4B4B4B;
+  max-width: 350px;
+}
+
+/* Home Adoção */
+
+.home-adocao {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.home-img-gato {
+  background: url("../img/home/adocao.jpg") no-repeat  center;
+  background-size: cover;
+  width: 500px;
+  height: 480px;
+  position: relative;
+}
+
+.home-inf-gato {
+  background: rgb(0, 0, 0, 0.4);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 30%;
+  text-align: center;
+}
+
+.home-inf-gato h3 {
+  margin: 20px 5px 10px;
+}
+
+.home-inf-gato p {
+  font-size: 1.5rem;
+  color: #fff;
+  margin: 0 5px;
+}
+
+.btn-mais-inf {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  display: inline-block;
+  text-align: right;
+  padding: 1px 8px;
+  margin: 5px 0 5px 440px;
+  border: solid #fff 3px;
+  border-radius: 50%;
+}
+
+.btn-mais-inf:hover {
+  color: #F5B994;
+  border: solid #F5B994 4px;
+}
+
+  .home-inf-gato h3 {
+    font-size: 1rem;
+    margin: 10px 5px 0px;
+  }
+  
+  .home-inf-gato p {
+    font-size: 1rem;
+  }
+  
+  .btn-mais-inf {
+    margin: 0;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    z-index: 1;
+  }
+
+.call p {
+  font-style: italic;
+  text-align: center;
+  margin: 60px 0 30px; 
+}
+
+.call .btn {
+  width: 210px;
+  margin: 30px auto 60px;
+}
+
+@media (min-width: 1800px) {
+  .home-inf-gato h3, .home-inf-gato p {
+    font-size: 1.5rem;
+  }
+  
+  .home-inf-gato h3 {
+    margin: 20px 5px 10px;
+  }  
+}
+
+@media (max-width: 1800px) {
+  .home-img-gato {
+    width: 360px;
+    height: 340px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .home-adocao {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home-img-gato {
+    margin-bottom: 30px;
+  }
+}
+
+  @media (max-width: 500px) {
+    .home-img-gato {
+      width: 280px;
+      height: 260px;
+    }
+
+    .btn-mais-inf {
+      display: none;
+    }
+
+    .home-inf-gato p {
+      line-height: initial;
+      margin-top: 6px;
+      font-size: 1.25rem;
+    }
+
+    .home-inf-gato h3 {
+      font-size: 1.25rem;
+    }
+  }
+
+/* Home Apadrinhamento */
+
+.home-apadrinhamento {
+  background: #FDF1EA;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
