@@ -143,6 +143,10 @@ blockquote {
     width: 360px;
     height: 340px;
   }
+
+  .home-inf-gato h3 {
+    margin: 15px 5px 5px;
+  }  
 }
 
 @media (max-width: 1300px) {

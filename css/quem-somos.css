@@ -1,3 +1,9 @@
+@media (min-width: 1800px) {
+.container-quem-somos {
+  width: 70%;
+}
+}
+
 .quem-somos-bg {
   background: url("../img/quem-somos-bg.jpg") no-repeat center;
   background-size: cover;
@@ -12,11 +18,12 @@
   display: grid;
   grid-template-columns: 2fr 2fr;
   gap: 60px;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
 }
 
 .sobre-wrapper-img {
   margin-left: 100px;
+  min-width: 250px;
 }
 
 .sobre-wrapper {
@@ -30,9 +37,26 @@
 
 .objetivo p {
   max-width: 1200px;
-  margin-bottom: 100px;
+  margin-bottom: 40px;
 }
 
-.img-equipe {
+.img-equipe img {
+  margin: 0 auto;
   margin-bottom: 80px;
+}
+
+@media (max-width: 1300px) {
+  .quem-somos {
+    display: flex;
+    flex-wrap: wrap-reverse;
+
+  }
+
+  .sobre-wrapper-img {
+    margin: 0 auto;
+  }
+
+  .sobre-wrapper {
+    margin-right: 0;
+  }
 }
